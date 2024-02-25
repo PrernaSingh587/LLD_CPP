@@ -9,7 +9,8 @@ mutex mtx;
 class Student {
     private:
         static int time;
-        
+        Student(const &Student);
+        Student operator(const &Student);
         Student(){
             this->time++;
             cout<<"counter is "<<this->time<<endl;
