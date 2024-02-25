@@ -73,7 +73,6 @@ class Olives : public PizzaDecorator {
         }
 };
 
-
 int main() {
     BasePizza *bp = new Jalepeno(new Cheese(new Olives(new Cheese(new Margeritta()))));
     cout<<bp->cost()<<endl;
